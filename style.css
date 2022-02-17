@@ -1,0 +1,366 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: "Rubik", sans-serif;
+}
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+.primery-our-menu .container-fluid{
+    width: 1280px;
+}
+
+/* MAIN MENU */
+
+ul{}
+ul li{}
+ul li a {
+    display: block;
+    list-style: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: #e83b3e;
+}
+
+.hader-info{}
+.hader-sharce {
+    width: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    margin-right: 30px;
+}
+.hader-sharce span{}
+.hader-call {
+    font-size: 29px;
+    color: #e83b3e;
+    margin-right: 19px;
+}
+.hader-call-info{
+    width: 200px;
+}
+.hader-call-info span {
+    color: #606060;
+    display: block;
+}
+.hader-call-info a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+body .btn-primary {
+    background: #e83b3e !important;
+    border-color: #e83b3e;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: -68px;
+
+    position: relative;
+    z-index: 999;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #111;
+    border: #111;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+body .btn-primary:hover::after{
+     width: 100%;
+}
+ul li{
+    position: relative;
+}
+ul li ul {
+    position: absolute;
+    list-style: none;
+    width: 300px;
+    top: 112px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    padding: 10px;
+    box-shadow: 3px 7px 9px 7px #ffffff;
+}
+ul li:hover ul{
+   top: 100%;
+   opacity: 1;
+   visibility: visible;
+}
+ul li ul li{}
+ul li ul li a{}
+
+.banner-section{
+    background: url(./img/asset\ 19.jpeg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+.baner-text{
+     }
+
+.banner-section .container-fluid{
+    width: 1280px;
+}
+.slider-section-q{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+}
+.baner-text{}
+.baner-text h6{
+    color: #e83c3e;
+    font-weight: 400;
+}
+.baner-text h1 {
+    font-size: 53px;
+}
+.baner-text p {
+    color: #606060;
+    margin-top: 27px;
+}
+
+/* Social icon banner */
+
+.social-icon{}
+.social-icon ul{
+    display: flex;
+}
+.social-icon ul li {
+    display: block;
+    list-style: none;
+    padding: 0px 6px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+.social-icon ul li span {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-top: 12px;
+    margin-right: 45px;
+}
+.social-icon ul li span::after {
+    content: "";
+    height: 1px;
+    background: #111;
+    width: 50px;
+    right: -85%;
+    top: 50%;
+    position: absolute;
+}
+.service-section{
+    border-bottom: 1px solid #ddd;
+}
+.service-section ul li{
+    list-style: none;
+    
+}
+
+.about-img{
+    position: relative;
+}
+.img-text {
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+    background: url(./img/asset\ 20.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.img-text h2{}
+.img-text p{}
+
+.about-text-menu{}
+.about-text-menu span{
+    color: #e73c3e;
+    font-weight: 400;
+}
+.about-text-menu h3{
+font-size: 36px;
+font-weight: 400;
+margin-top: 10px;
+margin-bottom: 16px;
+
+}
+.about-text-menu p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 400;
+    font-size: 16px;
+}
+.about-text-menu strong{
+    font-size: 18px;
+    color: #606060;
+    font-weight: 400;
+}
+.about-text-menu ul li {
+    list-style-type: none;
+    color: #606060;
+    margin-bottom: 22px;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 11px;
+}
+.about-text-menu ul li i {
+    position: absolute;
+    left: -23px;
+    top: 0;
+    color: #e73c3e;
+    font-size: 20px;
+}
+
+/* Fither Item */
+.fithar-item::after{
+    position: absolute;
+    content: "";
+    height: 65%;
+    width: 90%;
+    background-color: #fdebeb;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -110px;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.fithar-item{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    
+    transition: all .5s ease-in-out;
+    margin-bottom: 30px;
+}
+.fithar-item .fitacher-icon{
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    background-color: #ffffff;
+    font-size: 50px;
+    color: #e73c3e;
+    border-radius: 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.fithar-item h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.fithar-item p{
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.fithar-item:hover .fitacher-icon{
+    color: #fff;
+    background-color: #e73c3e;
+}
+.fithar-item:hover{
+   transform: translateY(-10px);
+}
+.margin-top{
+    margin-top: -30px;
+}
+.choos-img{
+    position: relative;
+    margin-top: 45px;
+}
+.choos-img .video-animation{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 45px;
+    right: 0;
+    margin: auto;
+    bottom: -40px;
+    -webkit-transform: translateY(-135%);
+    transform: translateY(-135%);
+    text-align: center;
+}
+.choos-img .video-animation i{
+    font-size: 55px;
+    position: relative;
+    top: 10px;
+    left: 0;
+    color: #e73c3e;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.choos-img .video-animation::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: ripple 1.6s ease-out infinite;
+    animation: shuvo 1s ease-out infinite ;
+    opacity: 0;
+    border-radius: 50%;
+    background: #e73c3e;
+}
+@keyframes shuvo{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    } 
+    }
+
+
+
+
+
+
